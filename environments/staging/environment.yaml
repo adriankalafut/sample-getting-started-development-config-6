@@ -12,4 +12,4 @@ app:
     - name: clientId
       value: "CHANGE_ME"
   version: ""
-  java: 17
+  java: 8

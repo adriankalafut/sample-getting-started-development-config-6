@@ -1,0 +1,15 @@
+version: 1.0
+app:
+  instances:
+    min: 1
+    max: 2
+  env:
+    - name: JVM_ARGS
+      value: "-DenvironmentType=stage"
+  variables:
+    - name: discoveryEndpoint
+      value: "https://adrian111.verify.ibm.com/oidc/endpoint/default/.well-known/openid-configuration"
+    - name: clientId
+      value: "d5c90bcc-bd60-4e05-9e2a-00678febeae2"
+  version: "fbc9929f-9343-422a-ab33-2c4b22f3d7f3"
+  java: 17
